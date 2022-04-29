@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TF2FPR"
+             xmlns:menu="clr-namespace:TF2FPR.view.Menu" 
+             xmlns:menuAd="clr-namespace:TF2FPR.view.MenuAdmin"
+             xmlns:view="clr-namespace:TF2FPR.view" 
+             Title="MenuF"
+             x:Class="TF2FPR.Menu">
+    <ContentPage.Content>
+        <StackLayout >
+            <Frame BackgroundColor="Red">
+                <Label Text="Bienvenido" TextColor="White"
+                       FontSize="32"
+                       HorizontalOptions="Center"/>
+                
+               
+            </Frame>
+            <ListView x:Name="listView" x:FieldModifier="public" >
+                <ListView.ItemsSource>
+                    <x:Array Type = "{x:Type local:Item}">
+                        <local:Item Titulo="Perfil" IconSource="ic_userone.png" TargetPage="{x:Type menu:Usuario}"/>
+                        <local:Item Titulo="Compras" IconSource="ic_shop.png" TargetPage="{x:Type menu:Compras}"/>
+                        <local:Item Titulo="Gastos" IconSource="ic_gastos.png" TargetPage="{x:Type menu:Gastos}"/>
+                        <local:Item Titulo="Targetas" IconSource="ic_card.png" TargetPage="{x:Type menu:Tarjetas}"/>
+                        <local:Item Titulo="Favoritos" IconSource="ic_star.png" TargetPage="{x:Type menu:Favoritos}"/>
+                        <local:Item Titulo="Historial" IconSource="ic_historial.png" TargetPage="{x:Type menu:Historial}"/>
+                        <local:Item Titulo="Configuraciones" IconSource="ic_settings.png" TargetPage="{x:Type menu:Configuraciones}"/>
+                        <!--admin-->
+                        <local:Item Titulo="Lista de Usuarios" IconSource="ic_settings.png" TargetPage="{x:Type menuAd:ListaUsuarios}"/>
+                        <local:Item Titulo="Agregar Productos" IconSource="ic_settings.png" TargetPage="{x:Type menuAd:ProductoAgregar}"/>
+                       
+                        <!--salir-->
+                        <local:Item Titulo="Salir" IconSource="ic_exit.png" TargetPage="{x:Type view:Login}"/>
+                       
+                    </x:Array>
+                </ListView.ItemsSource>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="33"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Source="{Binding IconSource}"/>
+                                <Label Grid.Column="1" Text="{Binding Titulo}"
+                                       VerticalOptions="Center" />
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

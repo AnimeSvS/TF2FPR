@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TF2FPR.view.Inicio"
+            
+            >
+
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+        <StackLayout>
+                    <SearchBar Placeholder="Productos" x:Name="BuscarProductos"
+                   TextChanged="BuscarProductos_TextChanged"/>
+                </StackLayout>
+
+                <CollectionView x:Name="vistaProductos"
+                            SelectionMode="Single"
+                            Margin="20,5,20,0"
+                            >
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <SwipeView>
+                                <SwipeView.RightItems>
+                                    <SwipeItems>
+                                        <SwipeItem Text="Editar"
+                                           BackgroundColor="#3399ff"
+                                           CommandParameter="{Binding .}"
+                                           x:Name="editP"
+                                           Invoked="editP_Invoked"/>
+                                        <SwipeItem Text="Borrar"
+                                           BackgroundColor="#ff3333"
+                                           CommandParameter="{Binding .}"
+                                           x:Name="deletP"
+                                           Invoked="deletP_Invoked"/>
+                                    </SwipeItems>
+                                </SwipeView.RightItems>
+                                <Grid RowSpacing="0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="20"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Text="{Binding Id_Producto}"
+                                       Grid.Row="0" Grid.RowSpan="2"
+                                       HorizontalOptions="CenterAndExpand"
+                                       VerticalOptions="CenterAndExpand"/>
+                                    <Label Text="{Binding NombreP}"
+                                       Grid.Row="0" Grid.Column="1"
+                                       VerticalOptions="CenterAndExpand"
+                                       FontSize="20"
+                                       FontAttributes="Bold"/>
+                                    <Label Text="{Binding Precio}"
+                                       Grid.Row="1" Grid.Column="1"/>
+                                </Grid>
+                            </SwipeView>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+
+                </CollectionView>
+
+
+
+
+
+                <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="0"/>
+
+            </Grid.RowDefinitions>
+
+
+
+                    <Button FontSize="12" HorizontalOptions="CenterAndExpand" CornerRadius="15" Grid.Column="0" Grid.Row="0" BackgroundColor="#ff4f63" Text="Ofertas"/>
+                    <Button FontSize="12" HorizontalOptions="CenterAndExpand" CornerRadius="15" Grid.Column="0" Grid.Row="1" BackgroundColor="#ff4f63" Text="Muebles"/>
+                    <Button FontSize="12" HorizontalOptions="CenterAndExpand" CornerRadius="15" Grid.Column="1" Grid.Row="0" BackgroundColor="#ff4f63" Text="Electrodomesticos"/>
+                    <Button FontSize="12" HorizontalOptions="CenterAndExpand" CornerRadius="15" Grid.Column="1" Grid.Row="1" BackgroundColor="#ff4f63" Text="Ropas"/>
+
+         
+
+            <Image Grid.Row="4" Grid.Column="0" Aspect="AspectFill" Source="https://static.comunicae.com/photos/notas/1215871/1593075056_polo.png"/>
+           
+            <Image Grid.Row="5" Grid.Column="0" Aspect="AspectFill" Source="https://static.comunicae.com/photos/notas/1215871/1593075056_polo.png"/>
+            <Image Grid.Row="4" Grid.Column="1" Aspect="AspectFill" Source="https://static.comunicae.com/photos/notas/1215871/1593075056_polo.png"/>
+            <Image Grid.Row="5" Grid.Column="1" Aspect="AspectFill" Source="https://static.comunicae.com/photos/notas/1215871/1593075056_polo.png"/>
+
+        </Grid>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+        
+</ContentPage>
+    
+    
+    

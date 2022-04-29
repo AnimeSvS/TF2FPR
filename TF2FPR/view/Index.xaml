@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:local="clr-namespace:TF2FPR"
+             x:Class="TF2FPR.view.Index"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content >
+        <!--<StackLayout>
+            <Image Source="https://i.ibb.co/Y8VW5HN/1img.png"/>
+            <Label Text=" Bienvenido"/>
+            <Button Text="Ingresar" x:Name="ingresar" Clicked="ingresar_Clicked"/>
+            <Button Text="Registrar" x:Name="registrar" Clicked="registrar_Clicked"/>
+
+        </StackLayout>-->
+
+
+
+        <StackLayout>
+            <Image Source="https://i.ibb.co/Y8VW5HN/1img.png"
+                   Margin="0,45,0,0"></Image>
+
+            <Label Text="Shoping Store"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   TextColor="#db5852"
+                   FontSize="32"
+                   FontFamily="Quicksand"
+                   Margin="0,30,0,0"/>
+            <Label
+                    TextColor="#545454"
+                    Text="Todo lo que deseas y buscas 😉"
+                   
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                     FontFamily="Quicksand Light"
+                    FontSize="17"/>
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center"
+                         Margin="0 ,30,0,40">
+                <!--boton de registrar-->
+                <Button
+                    Text="Registrarse"
+                    BackgroundColor="#FF4F63"
+                    TextColor="White"
+                    FontSize="12"
+                    HeightRequest="40"
+                    WidthRequest="170"
+                    x:Name="btnRegister" 
+                    FontFamily="Quicksand"
+                    CornerRadius="20"
+                    Clicked="registrar_Clicked"/>
+
+            </StackLayout>
+            <Label
+                    TextColor="#2c334f"
+                    Text="Si ya tienes una cuenta"
+                   
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    FontFamily="Quicksand"
+                    FontSize="17"/>
+
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center">
+<!--Boton de ingresar-->
+                <Button
+                    Text="Inicia Secion"
+                    BackgroundColor="White"
+                    TextColor="#o7af8c"
+                    FontSize="12"
+                   VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    x:Name="btnNom2" 
+                    FontFamily="Quicksand"
+                    CornerRadius="20"
+                    Clicked="ingresar_Clicked"
+
+                    Margin="0,0,0,-10" />
+
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

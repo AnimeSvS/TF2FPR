@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TF2FPR.view.Login"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Frame Margin="50, 50,50,0"
+               BorderColor="#ececec"
+              
+               CornerRadius="100"
+               HeightRequest="160"
+               WidthRequest="160"
+              
+            
+               HorizontalOptions="Center"
+               VerticalOptions="Center">
+                <Image Source="https://e.rpp-noticias.io/xlarge/2020/09/07/993219tony-starkjpg.jpg"
+                   Aspect="AspectFill"
+                   Margin="-20"
+                   HeightRequest="120"
+                   WidthRequest="120" />
+            </Frame>
+
+            <Label Text="&lt;h4>Bienvenido&lt;/h4>"
+                   TextType="Html"
+                   
+                   HorizontalOptions="CenterAndExpand"
+                   TextColor="#545454"
+                   FontSize="42"
+                   FontFamily="Comic Sans MS"
+                   Margin="0,20,0,-30"
+                
+                  />
+            <!--<Label Text="Inicia Secion Y Continue"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   TextColor="#545454"
+                   FontSize="22"
+                   Margin="0,0,0,45"
+                
+                  />-->
+            <Entry
+                
+                Placeholder="Usuario"
+                
+                 HorizontalOptions="CenterAndExpand"
+                WidthRequest="300"
+                PlaceholderColor="#8f8e8e"
+                TextColor="Black"
+                Margin="0,0,0,20"
+                x:Name="txtUsuario"
+                
+                />
+            <Entry
+               
+                TextColor="Black"
+                Placeholder="Contraseña"
+               
+                HorizontalOptions="Center"
+                WidthRequest="300"
+                PlaceholderColor="#8f8e8e" 
+                x:Name="txtPassword"/>
+
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center"
+                         Margin="0 ,30,0,0">
+                <!--ingresar-->
+                <Button
+                    Text="Ingresar"
+                    BackgroundColor="#FF4F63"
+                    TextColor="White"
+                    FontSize="12"
+                    HeightRequest="40"
+                    WidthRequest="190"
+                    x:Name="btnInicio" 
+                    FontFamily="Quicksand"
+                    CornerRadius="20"
+                    Clicked="btnInicio_Clicked" />
+
+            </StackLayout>
+            <Label
+                    TextColor="#2c334f"
+                    Text="¿Olvido su contraseña?"
+                   
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                FontFamily="Quicksand"
+                FontSize="17"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

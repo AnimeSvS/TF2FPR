@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TF2FPR.view.Registro"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+
+        <StackLayout BackgroundColor="#fff1">
+            <Grid>
+                <StackLayout Padding="0" Margin="0" HorizontalOptions="FillAndExpand">
+                    <Frame HeightRequest="150" BackgroundColor="HotPink" Padding="0" Margin="0">
+                        <Image 
+                        Source="https://http2.mlstatic.com/D_NQ_NP_738620-MLC44586026019_012021-O.webp" Aspect="AspectFill" Margin="0"/>
+                    </Frame>
+                </StackLayout>
+                <StackLayout Padding="0" Margin="10,100,10,0" HorizontalOptions="FillAndExpand">
+                    <Frame  BackgroundColor="White" HeightRequest="600" HasShadow="True" Padding="0" Margin="0">
+
+                        <StackLayout>
+
+
+                            <StackLayout Margin="8">
+                                <Label Text="Registro" TextColor="Gray	" HorizontalOptions="CenterAndExpand" 
+                                   FontSize="30"/>
+
+
+                            </StackLayout>
+
+                            <StackLayout Padding="0" Margin="15,5">
+                                <!--nombre apellido-->
+                                <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                            <Image Source="https://www.findool.com/images/avatars/avatar.png" Aspect="AspectFill" Margin="0"/>
+                                        </Frame>
+
+                                        <Entry Placeholder="Nombres y Apellidos" TextColor="Gray" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"
+                                               x:Name="nombreApellidos"/>
+                                    </StackLayout>
+                                </Frame>
+                                <!-- usuario-->
+                                <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                            <Image Source="https://www.findool.com/images/avatars/avatar.png" Aspect="AspectFill" Margin="0"/>
+                                        </Frame>
+
+                                        <Entry Placeholder="Usuario" TextColor="Gray" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"
+                                               x:Name="usuario"/>
+                                    </StackLayout>
+                                </Frame>
+                                <!--contraseña -->
+                                <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                            <Image Source="https://images.all-free-download.com/images/graphicthumb/lock_icon_6813906.jpg" Aspect="AspectFill" Margin="0"/>
+                                        </Frame>
+
+                                        <Entry Placeholder="Contraseña" IsPassword="True" TextColor="Gray" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"
+                                               x:Name="contraseña"/>
+                                    </StackLayout>
+                                </Frame>
+                                <!-- contraseña repit-->
+                                <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                            <Image Source="https://images.all-free-download.com/images/graphicthumb/lock_icon_6813906.jpg" Aspect="AspectFill" Margin="0"/>
+                                        </Frame>
+
+                                        <Entry Placeholder="Contraseña" PlaceholderColor="DarkGray"
+                                           IsPassword="True" TextColor="Gray" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                                    </StackLayout>
+                                </Frame>
+
+                                <!-- fecha-->
+                                <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+
+
+                                            <Image Source="https://png.pngtree.com/element_our/png_detail/20190103/vector-calendar-icon-png_308701.jpg" Aspect="AspectFill" Margin="0"/>
+                                        </Frame>
+
+                                        <DatePicker x:Name="calendario" DateSelected="calendario_DateSelected" 
+                                       FontAttributes="None"  
+                                                TextColor="Black"
+                                                Margin="0,0,0,0"
+                                                />
+                                    </StackLayout>
+                                </Frame>
+
+                                <StackLayout  Orientation="Horizontal">
+                                    <CheckBox IsChecked="False" Color="#FF4F63" />
+                                    <Label Text="" TextColor="DarkGray" FontSize="Small" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+
+                                    <Label Text="Aceptas los terminos y condiciones." TextColor="#FF4F63" FontAttributes="Bold" FontSize="Small" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+
+
+                                </StackLayout>
+                                
+                                    <!--boton registrar-->
+                                <Button Text="Registrar" BackgroundColor="#FF4F63" TextColor="White" CornerRadius="30" x:Name="btnRegistro"
+                                        Clicked="btnRegistro_Clicked"/>
+                                <Label Text="¿Tienes una cuenta?" TextColor="DarkGray" FontSize="Small" HorizontalOptions="CenterAndExpand"
+                                           Padding="0,10,0,0"/>
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                                   
+                                    <Button
+                                            Text="Iniciar Sesión"
+                                            BackgroundColor="White"
+                                            TextColor="#o7af8c"
+                                            FontSize="12"
+                                          
+                                            HorizontalOptions="CenterAndExpand"
+                                            x:Name="btnIniciarS" 
+                                            FontFamily="Quicksand"
+                                            CornerRadius="20"
+                                            Clicked="btnIniciarS_Clicked"
+
+                                           />       
+                                    <!--<Button  BackgroundColor="White" Margin="0,-3,0,0" Padding="0,0,0,11"
+                                        Text="Login" TextColor="#FF4F63" FontAttributes="Bold" FontSize="Small"
+                                             HeightRequest="35" x:Name="btnRegistro"
+                                             Clicked="btnRegistro_Clicked_1"/>-->
+                                </StackLayout>
+
+                                <!--<StackLayout Margin="0,25,0,0" Padding="0">
+                                    <Grid>
+                                        <BoxView BackgroundColor="DarkGray" HeightRequest="1" WidthRequest="150"  HorizontalOptions="Center" VerticalOptions="Center"/>
+                                        <Frame BackgroundColor="White" HeightRequest="45" WidthRequest="125" CornerRadius="35" HasShadow="False" BorderColor="DarkGray" Margin="0" HorizontalOptions="Center" Padding="0">
+                                            <Label Text="Registrate con:" TextColor="DarkGray" FontSize="Small" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                                        </Frame>
+                                    </Grid>
+                                </StackLayout>
+
+                                <StackLayout Margin="0,15" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                                    <Frame BackgroundColor="White" HeightRequest="45" WidthRequest="40" CornerRadius="45" HasShadow="False" BorderColor="White" Margin="0" HorizontalOptions="Center" Padding="0">
+                                        <Image Source="https://png.pngtree.com/png-clipart/20190705/original/pngtree-facebook-social-media-icon-png-image_4235822.jpg" Aspect="AspectFill" Margin="0"/>
+                                    </Frame>
+                                    <Frame BackgroundColor="White" HeightRequest="40" WidthRequest="35" CornerRadius="60" HasShadow="False" BorderColor="White" Margin="0" HorizontalOptions="Center" Padding="0">
+                                        <Image Source="https://blog.hubspot.com/hubfs/image8-2.jpg" Aspect="AspectFill" Margin="0"/>
+                                    </Frame>
+                                </StackLayout>-->
+
+                            </StackLayout>
+
+
+                        </StackLayout>
+
+                    </Frame>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

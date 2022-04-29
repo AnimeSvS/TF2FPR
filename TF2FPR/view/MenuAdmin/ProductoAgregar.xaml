@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TF2FPR.view.MenuAdmin.ProductoAgregar">
+
+    <ContentPage.Content>
+        <StackLayout Padding="0" Margin="10,100,10,0" HorizontalOptions="FillAndExpand">
+            <Frame  BackgroundColor="White" HeightRequest="600" HasShadow="True" Padding="0" Margin="0">
+                <StackLayout>
+                    <StackLayout Margin="8">
+                        <Label Text="Registro" TextColor="Gray	" HorizontalOptions="CenterAndExpand" 
+                                   FontSize="30"/>
+                    </StackLayout>
+                    <StackLayout Padding="0" Margin="15,5">
+                        <!--pridcuto-->
+                        <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                            <StackLayout Orientation="Horizontal">
+                                <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                    <Image Source="https://www.findool.com/images/avatars/avatar.png" Aspect="AspectFill" Margin="0"/>
+                                </Frame>
+
+                                <Entry Placeholder="Producto" TextColor="Gray" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"
+                                               x:Name="productoName"/>
+                            </StackLayout>
+                        </Frame>
+
+                        <!-- cantidad-->
+                        <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                            <StackLayout Orientation="Horizontal">
+                                <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                    <Image Source="https://www.findool.com/images/avatars/avatar.png" Aspect="AspectFill" Margin="0"/>
+                                </Frame>
+
+                                <Entry Placeholder="Cantidad" TextColor="Gray" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"
+                                               x:Name="cantidadP"/>
+                            </StackLayout>
+                        </Frame>
+
+                        <!--precio -->
+                        <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                            <StackLayout Orientation="Horizontal">
+                                <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                    <Image Source="https://images.all-free-download.com/images/graphicthumb/lock_icon_6813906.jpg" Aspect="AspectFill" Margin="0"/>
+                                </Frame>
+
+                                <Entry Placeholder="Precio" TextColor="Gray" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"
+                                                x:Name="precioP"/>
+                            </StackLayout>
+                        </Frame>
+
+                        <!--categoria -->
+                        <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                            <StackLayout Orientation="Horizontal">
+                                <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                    <Image Source="https://images.all-free-download.com/images/graphicthumb/lock_icon_6813906.jpg" Aspect="AspectFill" Margin="0"/>
+                                </Frame>
+
+                                <Entry Placeholder="Categoria" TextColor="Gray" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"
+                                               x:Name="categoriaP"/>
+                            </StackLayout>
+                        </Frame>
+
+                        <!--Estado-->
+                        <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                            <StackLayout Orientation="Horizontal">
+                                <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                    <Image Source="https://images.all-free-download.com/images/graphicthumb/lock_icon_6813906.jpg" Aspect="AspectFill" Margin="0"/>
+                                </Frame>
+
+                                <Entry Placeholder="Estado" PlaceholderColor="DarkGray"
+                                           TextColor="Gray" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"
+                                           x:Name="estadoP"/>
+                            </StackLayout>
+                        </Frame>
+
+                        <!--descripcion-->
+                        <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                            <StackLayout Orientation="Horizontal">
+                                <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                    <Image Source="https://images.all-free-download.com/images/graphicthumb/lock_icon_6813906.jpg" Aspect="AspectFill" Margin="0"/>
+                                </Frame>
+
+                                <Entry Placeholder="Descripcion" PlaceholderColor="DarkGray"
+                                           TextColor="Gray" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"
+                                            x:Name="descripcionP"/>
+                            </StackLayout>
+                        </Frame>
+                        <!--boton registrar-->
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Button
+                                            Text="Iniciar Sesión"
+                                            BackgroundColor="White"
+                                            TextColor="#o7af8c"
+                                            FontSize="12"
+                                          
+                                            HorizontalOptions="CenterAndExpand"
+                                            x:Name="btnAgregarP" 
+                                            FontFamily="Quicksand"
+                                            CornerRadius="20"
+                                            Clicked="btnAgregarP_Clicked"
+                                           />
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
