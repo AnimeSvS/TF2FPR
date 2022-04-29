@@ -14,6 +14,6 @@ namespace TF2FPR.model
 
         public string Usuario { get; set; }
         public string Contraseña { get; set; }
-        //public DateTime FechaN { get; set; }
+    
     }
 }

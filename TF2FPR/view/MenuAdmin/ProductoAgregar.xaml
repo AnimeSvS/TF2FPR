@@ -8,73 +8,67 @@
             <Frame  BackgroundColor="White" HeightRequest="600" HasShadow="True" Padding="0" Margin="0">
                 <StackLayout>
                     <StackLayout Margin="8">
-                        <Label Text="Registro" TextColor="Gray	" HorizontalOptions="CenterAndExpand" 
+                        <Label Text="REGISTRO DE PRODUCTOS 🛒" TextColor="Gray	" HorizontalOptions="CenterAndExpand" 
                                    FontSize="30"/>
                     </StackLayout>
-                    <StackLayout Padding="0" Margin="15,5">
+                    <StackLayout  Margin="15,5">
                         <!--pridcuto-->
-                        <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
-                            <StackLayout Orientation="Horizontal">
-                                <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
-                                    <Image Source="https://www.findool.com/images/avatars/avatar.png" Aspect="AspectFill" Margin="0"/>
-                                </Frame>
+                        <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="25,0,20,0" HorizontalOptions="FillAndExpand" CornerRadius="30"
+                               >
+                           
 
                                 <Entry Placeholder="Producto" TextColor="Gray" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"
-                                               x:Name="productoName"/>
-                            </StackLayout>
+                                               x:Name="productoName" />
+                           
                         </Frame>
 
                         <!-- cantidad-->
-                        <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
-                            <StackLayout Orientation="Horizontal">
-                                <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
-                                    <Image Source="https://www.findool.com/images/avatars/avatar.png" Aspect="AspectFill" Margin="0"/>
-                                </Frame>
+                        <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="25,0,20,0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                            
 
                                 <Entry Placeholder="Cantidad" TextColor="Gray" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"
-                                               x:Name="cantidadP"/>
-                            </StackLayout>
+                                              Keyboard="Numeric" x:Name="cantidadP"/>
+                           
                         </Frame>
 
                         <!--precio -->
-                        <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
-                            <StackLayout Orientation="Horizontal">
-                                <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
-                                    <Image Source="https://images.all-free-download.com/images/graphicthumb/lock_icon_6813906.jpg" Aspect="AspectFill" Margin="0"/>
-                                </Frame>
+                        <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Margin="0,15,0,0" Padding="25,0,20,0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                          
 
                                 <Entry Placeholder="Precio" TextColor="Gray" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"
-                                                x:Name="precioP"/>
-                            </StackLayout>
+                                               Keyboard="Numeric" x:Name="precioP"/>
+                            
                         </Frame>
 
                         <!--categoria -->
-                        <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
-                            <StackLayout Orientation="Horizontal">
-                                <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
-                                    <Image Source="https://images.all-free-download.com/images/graphicthumb/lock_icon_6813906.jpg" Aspect="AspectFill" Margin="0"/>
-                                </Frame>
+                        <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Margin="0,15,0,0" Padding="25,0,20,0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                            
 
                                 <Entry Placeholder="Categoria" TextColor="Gray" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"
                                                x:Name="categoriaP"/>
-                            </StackLayout>
+                           
                         </Frame>
 
                         <!--Estado-->
-                        <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
-                            <StackLayout Orientation="Horizontal">
-                                <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
-                                    <Image Source="https://images.all-free-download.com/images/graphicthumb/lock_icon_6813906.jpg" Aspect="AspectFill" Margin="0"/>
-                                </Frame>
-
+                        <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Margin="0,15,0,0" Padding="25,0,20,0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                          
                                 <Entry Placeholder="Estado" PlaceholderColor="DarkGray"
                                            TextColor="Gray" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"
                                            x:Name="estadoP"/>
-                            </StackLayout>
+                           
                         </Frame>
 
                         <!--descripcion-->
-                        <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                        <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Margin="0,15,0,0" Padding="25,0,20,0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                           
+
+                                <Entry Placeholder="Descripcion" PlaceholderColor="DarkGray"
+                                           TextColor="Gray" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"
+                                           Keyboard="Chat" x:Name="descripcionP"/>
+                           
+                        </Frame>
+                        <!--imagen-->
+                        <!--<Frame BackgroundColor="Transparent" BorderColor="DarkGray" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
                             <StackLayout Orientation="Horizontal">
                                 <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
                                     <Image Source="https://images.all-free-download.com/images/graphicthumb/lock_icon_6813906.jpg" Aspect="AspectFill" Margin="0"/>
@@ -82,21 +76,21 @@
 
                                 <Entry Placeholder="Descripcion" PlaceholderColor="DarkGray"
                                            TextColor="Gray" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"
-                                            x:Name="descripcionP"/>
+                                             x:Name="imagenP"/>
                             </StackLayout>
-                        </Frame>
+                        </Frame>-->
                         <!--boton registrar-->
-                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Padding="0,25,0,0">
                             <Button
-                                            Text="Iniciar Sesión"
-                                            BackgroundColor="White"
-                                            TextColor="#o7af8c"
-                                            FontSize="12"
-                                          
+                                            Text="Registrar"
+                                            BackgroundColor="Green"
+                                            TextColor="White"
+                                            FontSize="15"
+                                            WidthRequest="150"
                                             HorizontalOptions="CenterAndExpand"
                                             x:Name="btnAgregarP" 
                                             FontFamily="Quicksand"
-                                            CornerRadius="20"
+                                            CornerRadius="15"
                                             Clicked="btnAgregarP_Clicked"
                                            />
                         </StackLayout>

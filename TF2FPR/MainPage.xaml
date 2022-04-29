@@ -5,7 +5,8 @@
             xmlns:local="clr-namespace:TF2FPR"
             xmlns:view="clr-namespace:TF2FPR.view"
             x:Class="TF2FPR.MainPage"
-            NavigationPage.HasNavigationBar="False">
+            NavigationPage.HasNavigationBar="False"
+            >
    
     <FlyoutPage.Flyout>
         <local:Menu x:Name="flyout"/>

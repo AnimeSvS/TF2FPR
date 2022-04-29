@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TF2FPR.view.MenuAdmin.EditProducto">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add" x:Name="AddProducto"
+                     Clicked="AddProducto_Clicked"/>
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <StackLayout>
+                    <SearchBar Placeholder="Productos" x:Name="BuscarProductos"
+                   TextChanged="BuscarProductos_TextChanged"/>
+                </StackLayout>
+
+                <CollectionView x:Name="vistaProductos"
+                            SelectionMode="Single"
+                            Margin="20,5,20,0"
+                            >
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <SwipeView>
+                                <SwipeView.RightItems>
+                                    <SwipeItems>
+                                        <SwipeItem Text="Editar"
+                                           BackgroundColor="#3399ff"
+                                           CommandParameter="{Binding .}"
+                                           x:Name="editP"
+                                           Invoked="editP_Invoked"/>
+                                        <SwipeItem Text="Borrar"
+                                           BackgroundColor="#ff3333"
+                                           CommandParameter="{Binding .}"
+                                           x:Name="deletP"
+                                           Invoked="deletP_Invoked"/>
+                                    </SwipeItems>
+                                </SwipeView.RightItems>
+                                <Grid RowSpacing="0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="20"/>
+                                    </Grid.ColumnDefinitions>
+
+
+                                    <!--<Label Text="ID"
+                                       Grid.Row="0" Grid.RowSpan="1"
+                                       HorizontalOptions="CenterAndExpand"
+                                       VerticalOptions="CenterAndExpand"/>
+                                    <Label Text="Producto"
+                                       Grid.Row="0" Grid.Column="1"
+                                       VerticalOptions="CenterAndExpand"
+                                       FontSize="20"
+                                       FontAttributes="Bold"/>
+                                    <Label Text="Precio"
+                                       Grid.Row="0" Grid.Column="2"
+                                       VerticalOptions="CenterAndExpand"
+                                       FontSize="20"
+                                       FontAttributes="Bold"/>
+                                    <Label Text="Cantidad"
+                                       Grid.Row="0" Grid.Column="3"
+                                       VerticalOptions="CenterAndExpand"
+                                       FontSize="20"
+                                       FontAttributes="Bold"/>-->
+
+
+
+
+
+
+
+
+                                    <Label Text="{Binding Id_Producto}"
+                                       Grid.Row="0" Grid.RowSpan="1"
+                                       HorizontalOptions="CenterAndExpand"
+                                       VerticalOptions="CenterAndExpand"/>
+                                    <Label Text="{Binding NombreP}"
+                                       Grid.Row="0" Grid.Column="1"
+                                       VerticalOptions="CenterAndExpand"
+                                       FontSize="20"
+                                       FontAttributes="Bold"/>
+                                    <Label Text="{Binding PrecioP}"
+                                       Grid.Row="0" Grid.Column="2"
+                                       VerticalOptions="CenterAndExpand"
+                                       FontSize="20"
+                                       FontAttributes="Bold"/>
+                                    <Label Text="{Binding CantidadP}"
+                                       Grid.Row="0" Grid.Column="3"
+                                       VerticalOptions="CenterAndExpand"
+                                       FontSize="20"
+                                       FontAttributes="Bold"/>
+
+                                </Grid>
+                            </SwipeView>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+
+</ContentPage>
+    
+    
+    

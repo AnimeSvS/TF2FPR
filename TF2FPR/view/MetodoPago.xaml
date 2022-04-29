@@ -5,9 +5,94 @@
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Grid>
+                <!--Contenedor -->
+                <StackLayout>
+
+                    <Label Text="Ambiente Seguro" FontSize="16" TextColor="#32b491" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="210,50,0,0"/>
+                    <Image Source="https://i.postimg.cc/7hyY92t7/1651183311754.png" HeightRequest="20" Margin="0,-25,0,0"></Image>
+                </StackLayout>
+                <!--Contenedor2-->
+                <StackLayout Padding="0" Margin="10,120,10,0" HorizontalOptions="FillAndExpand">
+                    <Frame  BackgroundColor="White" HeightRequest="600" HasShadow="True" Padding="0" Margin="0">
+
+                        <StackLayout>
+                            <StackLayout Margin="8" >
+                                <Label Text="¿Como Prefieres Pagar?" TextColor="Gray	" HorizontalOptions="CenterAndExpand" FontSize="30"/>
+
+                            </StackLayout>
+                            <StackLayout Padding="0" Margin="15,5">
+
+                                <!--Frame Envuelve al contenedor Tarjeta-->
+                                <Frame Margin="0,30,0,10" HeightRequest="53" BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Frame  HeightRequest="43" WidthRequest="45" CornerRadius="30" Padding="1" Margin="5">
+                                            <Image Source="https://cdn-icons-png.flaticon.com/512/60/60378.png" Aspect="AspectFill " BackgroundColor="White"  Margin="0"/>
+                                        </Frame>
+                                        <StackLayout>
+                                            <Label Text="Tarjeta" FontSize="16" TextColor="Gray" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="10,12,-20,0"/>
+
+                                        </StackLayout>
+
+                                        <ImageButton   Source="https://i.postimg.cc/L8Y4dSYN/png-pointer-icon-png-Arrow-Right-White-removebg-preview.png"
+                                          WidthRequest="50"  Margin="140,2,0,2" BackgroundColor="White"></ImageButton>
+                                    </StackLayout>
+                                </Frame>
+                                <!--Frame Envuelve al contenedor efectivo-->
+                                <Frame Margin="0,30,0,10"  HeightRequest="53" BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Frame  HeightRequest="40" WidthRequest="45" CornerRadius="30" Padding="0" Margin="5">
+                                            <Image Source="https://cdn-icons-png.flaticon.com/512/2488/2488749.png" Aspect="AspectFill" Margin="0"/>
+                                        </Frame>
+
+                                        <StackLayout>
+                                            <Label Text="Efectivo" FontSize="16" TextColor="Gray" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="10,12,-30,0"/>
+
+                                        </StackLayout>
+
+                                        <ImageButton   Source="https://i.postimg.cc/L8Y4dSYN/png-pointer-icon-png-Arrow-Right-White-removebg-preview.png"
+                                          WidthRequest="50"  Margin="140,2,0,2" BackgroundColor="White"></ImageButton>
+                                    </StackLayout>
+                                </Frame>
+                                <!--Para contener Datos de ingreso yape/tunki-->
+                                <Frame Margin="0,30,0,10"  HeightRequest="53" BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Frame  HeightRequest="40" WidthRequest="45" CornerRadius="30" Padding="0" Margin="6">
+                                            <Image Source="https://www.yape.com.pe/assets/images/logo.png" Aspect="AspectFill" Margin="0"/>
+                                        </Frame>
+
+                                        <StackLayout>
+                                            <Label Text="Yape/Tunki" FontSize="16" TextColor="Gray" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="10,12,-50,0"/>
+
+                                        </StackLayout>
+
+                                        <ImageButton   Source="https://i.postimg.cc/L8Y4dSYN/png-pointer-icon-png-Arrow-Right-White-removebg-preview.png"
+                                          WidthRequest="50"  Margin="140,2,0,2" BackgroundColor="White"></ImageButton>
+                                    </StackLayout>
+                                </Frame>
+
+                                <!--Para poner titulo-->
+                                <Frame HeightRequest="80" WidthRequest="40" Margin="0,30,0,10" BackgroundColor="#f4f8ff"  Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="10">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Total" FontSize="16" TextColor="Gray" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="10,10,0,0"/>
+                                    </StackLayout>
+                                </Frame>
+
+                                <!--Contenedor de Terminos y Condiciones-->
+                                <StackLayout Margin="0,25,0,0" Padding="0">
+                                    <Grid>
+                                        <Frame  HeightRequest="10" WidthRequest="15" HasShadow="False"  Margin="0,0,165,0"  Padding="0">
+                                            <Image Source="https://i.postimg.cc/9MrkrgWF/1651183203448.png"  Margin="0"></Image>
+                                        </Frame>
+                                        <Label Text="Terminos y Condiciones" TextDecorations="Underline"
+                                               TextColor="DarkCyan" FontSize="13" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                                    </Grid>
+                                </StackLayout>
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

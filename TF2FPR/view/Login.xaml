@@ -61,7 +61,8 @@
                 HorizontalOptions="Center"
                 WidthRequest="300"
                 PlaceholderColor="#8f8e8e" 
-                x:Name="txtPassword"/>
+                x:Name="txtPassword"
+                IsPassword="True"/>
 
             <StackLayout Orientation="Horizontal"
                          HorizontalOptions="Center"

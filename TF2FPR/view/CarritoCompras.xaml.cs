@@ -7,16 +7,14 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace TF2FPR
+namespace TF2FPR.view
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Menu : ContentPage
+    public partial class CarritoCompras : ContentPage
     {
-        public Menu()
+        public CarritoCompras()
         {
             InitializeComponent();
         }
-
-    
     }
 }

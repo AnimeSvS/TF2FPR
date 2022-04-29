@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TF2FPR.view.CarritoCompras"
+             Title=" 🛒 CARRITO DE COMPRAS"
+             
+             >
+    <ContentPage.Content>
+       
+                <!--PRIMER GRID PARA TODA LA PAGINA-->
+                <ScrollView>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0"/>
+                            <RowDefinition Height="120"/>
+                            <RowDefinition Height="120"/>
+                            <RowDefinition Height="20"/>
+                            <RowDefinition Height="20"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <!--GRID DEL PRINCIPIO-->
+                       
+                        <!--GRID DEL CARRO DE COMPRAS-->
+                        <Grid Grid.Row="1" Margin="10,20,10,0" Padding="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="25"/>
+                                <RowDefinition Height="25"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+                       Text="Carrito de Compras" TextColor="Red" FontSize="18" CharacterSpacing="2"/>
+                            <Image Grid.Column="2" Grid.Row="0" Grid.RowSpan="3" Aspect="AspectFill"
+                       Source="https://static.vecteezy.com/system/resources/previews/004/458/418/large_2x/shopping-cart-flat-linear-long-shadow-icon-add-to-cart-sign-line-symbol-vector.jpg"/>
+                            <Label Grid.Row="1" Grid.Column="0" Text="Total" TextColor="DarkCyan"/>
+                            <Label Grid.Row="1" Grid.Column="1" Text="$/20" FontAttributes="Bold"/>
+                            <Label Grid.Row="2" Grid.Column="0" Text="Ahorrado" TextColor="DarkCyan" FontSize="10"/>
+                            <Label Grid.Row="2" Grid.Column="1" Text="$/5" FontAttributes="Bold" FontSize="10"/>
+                        </Grid>
+                        <!--GRID DE LA PLAYERA NEGRA-->
+                        <Grid Grid.Row="2" Margin="5,10,5,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="25"/>
+                                <RowDefinition Height="25"/>
+                                <RowDefinition Height="25"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Row="0" Grid.RowSpan="4" Grid.Column="0" Aspect="AspectFill" Margin="5"
+                       Source="https://cdn.shopify.com/s/files/1/0553/4315/3318/products/2.1-Tshirt-Black_1800x1800.jpg?v=1630687617"/>
+                            <Label Grid.Row="0" Grid.Column="1" Text="Playera negra" VerticalOptions="EndAndExpand"
+                           TextColor="Black" FontAttributes="Bold" FontSize="15"/>
+                            <Label Grid.Row="1" Grid.Column="1" Text="Perfecta para usted"
+                           FontSize="10" TextColor="Black" VerticalOptions="StartAndExpand"/>
+                            <Image Grid.Row="2" Grid.Column="1" HorizontalOptions="Start"
+                       Source="https://static.vecteezy.com/system/resources/thumbnails/002/399/687/small/five-stars-rating-icon-vector.jpg"/>
+                            <Label Grid.Row="3" Grid.Column="1" Text="$/20" FontSize="15" TextColor="Black" FontAttributes="Bold"/>
+                            <Image Grid.Row="0" Grid.Column="2" Grid.RowSpan="2" HorizontalOptions="Center" VerticalOptions="Center"
+                       Source="https://ayudawp.com/wp-content/uploads/2018/04/borrar-plugins-wordpress.png"/>
+                        </Grid>
+                        <!--La LINEA-->
+                        <Label Grid.Row="3" Text="_______________________________________________________"
+                       FontAttributes="Bold" TextColor="DarkCyan" HorizontalOptions="Center"/>
+                        <Label Grid.Row="4" Text="          Seguir comprando" 
+                       TextColor="DarkCyan" FontAttributes="Italic" />
+                        <!--GRID DE LA PLAYERA ROJA-->
+                        <Grid Grid.Row="5" Margin="5,10,5,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="25"/>
+                                <RowDefinition Height="25"/>
+                                <RowDefinition Height="25"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Row="0" Grid.RowSpan="4" Grid.Column="0" Aspect="AspectFill" Margin="5"
+                       Source="https://www.forprint.com.mx/wp-content/uploads/2018/11/WITEX_REDONDO_NINO_ROJO.jpg"/>
+                            <Label Grid.Row="0" Grid.Column="1" Text="Playera Roja" VerticalOptions="EndAndExpand"
+                           TextColor="Black" FontAttributes="Bold" FontSize="15"/>
+                            <Label Grid.Row="1" Grid.Column="1" Text="Talla de muy buena calidad"
+                           FontSize="10" TextColor="Black" VerticalOptions="StartAndExpand"/>
+                            <Image Grid.Row="2" Grid.Column="1" HorizontalOptions="Start"
+                       Source="https://static.vecteezy.com/system/resources/thumbnails/002/399/687/small/five-stars-rating-icon-vector.jpg"/>
+                            <Label Grid.Row="3" Grid.Column="1" Text="$/40" FontSize="15" TextColor="Black" FontAttributes="Bold"/>
+                            <Button Grid.Row="2" Grid.Column="2" Grid.RowSpan="2" HorizontalOptions="Center" VerticalOptions="Center"
+                       Text="Agregar" CornerRadius="15" BackgroundColor="MediumVioletRed" 
+                                    TextColor="White" WidthRequest="120"/>
+                        </Grid>
+                        <!--grid de la playera azul-->
+                        <Grid Grid.Row="6" Margin="5,10,5,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="25"/>
+                                <RowDefinition Height="25"/>
+                                <RowDefinition Height="25"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Row="0" Grid.RowSpan="4" Grid.Column="0" Aspect="AspectFill" Margin="5"
+                       Source="https://dsnegsjxz63ti.cloudfront.net/images/pg/l_325fb5b72908a7f.jpg"/>
+                            <Label Grid.Row="0" Grid.Column="1" Text="Playera Azul" TextColor="Black"
+                           FontAttributes="Bold" FontSize="15" VerticalOptions="EndAndExpand"/>
+                            <Label Grid.Row="1" Grid.Column="1" Text="Perfecta para ir al gym"
+                           FontSize="10" TextColor="Black" VerticalOptions="StartAndExpand"/>
+                            <Image Grid.Row="2" Grid.Column="1" HorizontalOptions="Start"
+                       Source="https://static.vecteezy.com/system/resources/thumbnails/002/399/687/small/five-stars-rating-icon-vector.jpg"/>
+                            <Label Grid.Row="3" Grid.Column="1" Text="$/32" FontSize="15" TextColor="Black" FontAttributes="Bold"/>
+                            <Button Grid.Row="2" Grid.Column="2" Grid.RowSpan="2" HorizontalOptions="Center" VerticalOptions="Center"
+                       Text="Agregar" CornerRadius="15" BackgroundColor="MediumVioletRed" 
+                                    TextColor="White" WidthRequest="120"/>
+                        </Grid>
+                    </Grid>
+                </ScrollView>
+       
+    </ContentPage.Content>
+</ContentPage>

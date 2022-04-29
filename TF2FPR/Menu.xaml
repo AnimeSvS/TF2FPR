@@ -5,30 +5,35 @@
              xmlns:menu="clr-namespace:TF2FPR.view.Menu" 
              xmlns:menuAd="clr-namespace:TF2FPR.view.MenuAdmin"
              xmlns:view="clr-namespace:TF2FPR.view" 
-             Title="MenuF"
+             Title="Menu"
              x:Class="TF2FPR.Menu">
     <ContentPage.Content>
         <StackLayout >
-            <Frame BackgroundColor="Red">
-                <Label Text="Bienvenido" TextColor="White"
-                       FontSize="32"
-                       HorizontalOptions="Center"/>
-                
-               
+            <Frame BackgroundColor="#E46060">
+                <Label Text="MENU" TextColor="White"
+                       FontSize="30"
+                       HorizontalOptions="Center"
+                       Padding="0,-10,0,-5"/>
+                              
             </Frame>
-            <ListView x:Name="listView" x:FieldModifier="public" >
+            <Frame Padding="35,25,0,0">
+            <ListView x:Name="listView" x:FieldModifier="public" 
+                      
+                     
+                      
+                      >
                 <ListView.ItemsSource>
                     <x:Array Type = "{x:Type local:Item}">
-                        <local:Item Titulo="Perfil" IconSource="ic_userone.png" TargetPage="{x:Type menu:Usuario}"/>
-                        <local:Item Titulo="Compras" IconSource="ic_shop.png" TargetPage="{x:Type menu:Compras}"/>
-                        <local:Item Titulo="Gastos" IconSource="ic_gastos.png" TargetPage="{x:Type menu:Gastos}"/>
+                        <local:Item Titulo="Perfil" IconSource="ic_userone.png" TargetPage="{x:Type menu:Usuario}" />
+                        <local:Item Titulo="Compras" IconSource="ic_shop.png" TargetPage="{x:Type view:CarritoCompras}"/>
+                        <local:Item Titulo="Gastos" IconSource="ic_gastos.png" TargetPage="{x:Type view:PagoQR}"/>
                         <local:Item Titulo="Targetas" IconSource="ic_card.png" TargetPage="{x:Type menu:Tarjetas}"/>
                         <local:Item Titulo="Favoritos" IconSource="ic_star.png" TargetPage="{x:Type menu:Favoritos}"/>
                         <local:Item Titulo="Historial" IconSource="ic_historial.png" TargetPage="{x:Type menu:Historial}"/>
                         <local:Item Titulo="Configuraciones" IconSource="ic_settings.png" TargetPage="{x:Type menu:Configuraciones}"/>
                         <!--admin-->
-                        <local:Item Titulo="Lista de Usuarios" IconSource="ic_settings.png" TargetPage="{x:Type menuAd:ListaUsuarios}"/>
-                        <local:Item Titulo="Agregar Productos" IconSource="ic_settings.png" TargetPage="{x:Type menuAd:ProductoAgregar}"/>
+                        <!--<local:Item Titulo="Lista de Usuarios" IconSource="ic_settings.png" TargetPage="{x:Type menuAd:ListaUsuarios}"/>
+                        <local:Item Titulo="Agregar Productos" IconSource="ic_settings.png" TargetPage="{x:Type menuAd:ProductoAgregar}"/>-->
                        
                         <!--salir-->
                         <local:Item Titulo="Salir" IconSource="ic_exit.png" TargetPage="{x:Type view:Login}"/>
@@ -52,7 +57,7 @@
                 </ListView.ItemTemplate>
             </ListView>
 
-
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

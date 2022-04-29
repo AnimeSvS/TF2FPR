@@ -16,7 +16,7 @@ namespace TF2FPR.data
         {
             //CREA UNA CONEXION ASINCRONA DE BUSQUEDA Y EXTRAE LA RUTA DE LA BASE DE DATOS
             db = new SQLiteAsyncConnection(dbPath);
-            //CREA LA TABLA BASADO EN LA ESTRUCTURA DE SHOPMODEL
+            //CREA LA TABLA BASADO EN LA ESTRUCTURA DE SHOPMODEL Y USERMODEL
             db.CreateTableAsync<UserModel>();
             db.CreateTableAsync<ShopModel>();
         }

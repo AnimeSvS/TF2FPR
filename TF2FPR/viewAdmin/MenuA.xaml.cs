@@ -7,16 +7,14 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace TF2FPR
+namespace TF2FPR.viewAdmin
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Menu : ContentPage
+    public partial class MenuA : ContentPage
     {
-        public Menu()
+        public MenuA()
         {
             InitializeComponent();
         }
-
-    
     }
 }

@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace TF2FPR.view.MenuAdmin
+namespace TF2FPR.view
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class VistaProducto : ContentPage
+    public partial class PagoQR : ContentPage
     {
-        public VistaProducto()
+        public PagoQR()
         {
             InitializeComponent();
         }

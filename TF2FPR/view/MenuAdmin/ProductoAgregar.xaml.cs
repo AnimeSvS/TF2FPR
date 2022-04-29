@@ -20,7 +20,7 @@ namespace TF2FPR.view.MenuAdmin
         public ProductoAgregar(model.ShopModel shopModel)
         {
             InitializeComponent();
-            Title = "Editar Productos";
+            Title = "Productos";
             _shopModel = shopModel;
             productoName.Text = shopModel.NombreP;
             precioP.Text = shopModel.PrecioP;
@@ -28,6 +28,7 @@ namespace TF2FPR.view.MenuAdmin
             categoriaP.Text = shopModel.Categoria;
             estadoP.Text = shopModel.EstadoP;
             descripcionP.Text = shopModel.DescripcionP;
+            //imagenP.Text = shopModel.ImageP;
 
             productoName.Focus();
         }
@@ -42,6 +43,7 @@ namespace TF2FPR.view.MenuAdmin
                 Categoria = categoriaP.Text,
                 EstadoP = estadoP.Text,
                 DescripcionP = descripcionP.Text,
+                //ImageP = imagenP.Text
 
 
 
@@ -56,6 +58,7 @@ namespace TF2FPR.view.MenuAdmin
             _shopModel.Categoria = categoriaP.Text;
             _shopModel.EstadoP = estadoP.Text;
             _shopModel.DescripcionP = descripcionP.Text;
+            //_shopModel.ImageP = imagenP.Text;
             await App.Database.UpdateProducto(_shopModel);
             await Navigation.PopAsync();
         }
