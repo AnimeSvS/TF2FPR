@@ -99,7 +99,7 @@
                                 </StackLayout>
                                 
                                     <!--boton registrar-->
-                                <Button Text="Registrar" BackgroundColor="#FF4F63" TextColor="White" CornerRadius="30" x:Name="btnRegistro"
+                                <Button Text="Guardar" BackgroundColor="#FF4F63" TextColor="White" CornerRadius="30" x:Name="btnRegistro"
                                         Clicked="btnRegistro_Clicked"/>
                                 <Label Text="¿Tienes una cuenta?" TextColor="DarkGray" FontSize="Small" HorizontalOptions="CenterAndExpand"
                                            Padding="0,10,0,0"/>

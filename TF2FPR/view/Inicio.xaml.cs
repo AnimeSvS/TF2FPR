@@ -23,6 +23,8 @@ namespace TF2FPR.view
 
         }
 
+        //DENTRO DEL CONTROL DE BUSQUEDA , LLAMAMOS A LA VARIABLE QUE SE PUSO AL COLLECTION VIEW
+        // ESA VARAIBLE BUSCARA CON EL METODO SEARCHPRODUCTO Y AHI LO BUSCARA POR SU NOMBRE
         async void BuscarProductos_TextChanged(object sender, TextChangedEventArgs e)
         {
             vistaProductos.ItemsSource = await App.Database.SearchProducto(e.NewTextValue);
@@ -35,6 +37,11 @@ namespace TF2FPR.view
         }
 
         private void deletP_Invoked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void infoP_Invoked(object sender, EventArgs e)
         {
 
         }

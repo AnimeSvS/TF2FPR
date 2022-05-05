@@ -4,7 +4,7 @@
              x:Class="TF2FPR.view.Menu.Tarjetas">
     <ContentPage.Content>
         <StackLayout >
-            <Grid Padding="5">
+            <Grid Padding="10,0,0,0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
@@ -29,20 +29,38 @@
                 <!--Contenedor2-->
                 <StackLayout Margin="5,80,5,0">
                     <StackLayout Margin="8" >
-                        <Label Text="COLOCA LOS DATOS DE LA TARJETA" TextColor="Gray	" HorizontalOptions="CenterAndExpand" FontSize="18"/>
+                        <Label Text="MASTERCARD - VISA" TextColor="Gray	" HorizontalOptions="CenterAndExpand" FontSize="18"/>
                     </StackLayout>
 
+                    <!--Este codigo es de el contenedor para rellenar nombre -->
+                    <StackLayout>
+                        <StackLayout >
+                            <Label Text="Nombre completo (del titular de la tarjeta)" FontSize="12" TextColor="Gray" HorizontalTextAlignment="left"/>
+                        </StackLayout>
+                        <Frame BackgroundColor="Transparent"  HeightRequest="53" BorderColor="DarkGray" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                            <StackLayout Orientation="Horizontal">
+                                <Frame HeightRequest="45" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                    <Image Source="ic_userone.png" Aspect="AspectFill" Margin="0"/>
+                                </Frame>
+                                <Entry  Keyboard="Text"  Placeholder="Nombre de la tarjeta" TextColor="Gray" >
+                                    <Entry.Behaviors>
+
+                                    </Entry.Behaviors>
+                                </Entry>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
                     <!--Contenedor y frame envolver img button y el titulo-->
-                    <StackLayout Padding="0"   Margin="3,30,-4,0">
+                    <StackLayout >
                         <StackLayout    >
-                            <Label Text="Numero de Tarjeta" FontSize="12" TextColor="Gray" HorizontalTextAlignment="left"/>
+                            <Label Text="Número de la tarjeta" FontSize="12" TextColor="Gray" HorizontalTextAlignment="left"/>
                         </StackLayout>
                         <Frame BackgroundColor="Transparent"  HeightRequest="55" BorderColor="DarkGray" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
                             <StackLayout Orientation="Horizontal">
                                 <Frame HeightRequest="45" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
                                     <Image Source="ic_card.png" Aspect="AspectFill" Margin="0"/>
                                 </Frame>
-                                <Entry Keyboard="Numeric" Placeholder="Enter your card number" TextColor="Gray">
+                                <Entry Keyboard="Numeric" Placeholder="Número de la tarjeta" TextColor="Gray">
                                     <!--behaviors disponibles procederemos a agregar a cada Entry un behavior para darle la funcionalidad de longitud máxima y una máscara.-->
 
                                     <!--<Entry.Behaviors>
@@ -53,16 +71,19 @@
                         </Frame>
 
                         <!--Contenedor3 -->
-                        <StackLayout  Margin="0,30,0,0" Orientation="Horizontal" >
+                        <StackLayout  Margin="0,20,0,0" Orientation="Horizontal" >
 
                             <StackLayout  Margin="0,-20,0,0"  >
-                                <Label Text="Fecha Vencimiento" FontSize="12" TextColor="Gray" HorizontalTextAlignment="left"/>
+                                <Label Text="Fecha de vencimiento" FontSize="12" TextColor="Gray" HorizontalTextAlignment="left"/>
                             </StackLayout>
 
                             <!--Frame para envolver Entry-->
                             <Frame BackgroundColor="Transparent"  HeightRequest="53" Margin="-103,0,0,0"  BorderColor="DarkGray" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
                                 <StackLayout Orientation="Horizontal">
-                                    <Entry Margin="20,0,0,0" Keyboard="Numeric" Placeholder="MM/YY  " TextColor="Gray">
+                                    <Frame HeightRequest="45" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                        <Image Source="ic_calendar.png" Aspect="AspectFill" Margin="0"/>
+                                    </Frame>
+                                    <Entry Keyboard="Numeric" Placeholder="MM/YY  " TextColor="Gray">
 
                                         <!--Para el caso de la fecha de expiración.-->
                                         <!--<Entry.Behaviors>
@@ -73,12 +94,15 @@
                             </Frame>
 
                             <!--Contenedor para El titulo de CVC y frame para envolver img y entry-->
-                            <StackLayout    Margin="0,-20,-10,0" >
-                                <Label Text="CVC" FontSize="12" TextColor="Gray" HorizontalTextAlignment="left"/>
+                            <StackLayout    Margin="0,-20,-100,0" >
+                                <Label Text="Código de seguridad" FontSize="12" TextColor="Gray" HorizontalTextAlignment="left"/>
                             </StackLayout>
                             <Frame BackgroundColor="Transparent"  HeightRequest="53"  BorderColor="DarkGray" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
                                 <StackLayout Orientation="Horizontal" >
-                                    <Entry Margin="30,0,0,0"  Keyboard="Numeric" Placeholder="numero" TextColor="Gray">
+                                    <Frame HeightRequest="45" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                        <Image Source="ic_cvv.png" Aspect="AspectFill" Margin="0"/>
+                                    </Frame>
+                                    <Entry  Keyboard="Numeric" Placeholder="CVV" TextColor="Gray">
                                         <!--Para el caso del número de CVC-->
                                         <!--<Entry.Behaviors>
                                             <fastEntry:XamarinFastEntryBehaviour Mask="####"  MaxLength="3"/>
@@ -88,14 +112,16 @@
                             </Frame>
                         </StackLayout>
 
-                        <!--Este codigo es de el contenedor para rellenar nombre -->
                         <StackLayout>
                             <StackLayout >
-                                <Label Text="Nombre" FontSize="12" TextColor="Gray" HorizontalTextAlignment="left"/>
+                                <Label Text="Correo Electrónico" FontSize="12" TextColor="Gray" HorizontalTextAlignment="left"/>
                             </StackLayout>
                             <Frame BackgroundColor="Transparent"  HeightRequest="53" BorderColor="DarkGray" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
                                 <StackLayout Orientation="Horizontal">
-                                    <Entry  Margin="20,0,0,0" Keyboard="Text"  Placeholder="Enter your card number" TextColor="Gray" >
+                                    <Frame HeightRequest="45" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                        <Image Source="ic_correo.png" Aspect="AspectFill" Margin="0"/>
+                                    </Frame>
+                                    <Entry  Keyboard="Email"  Placeholder="Correo Electrónico" TextColor="Gray" >
                                         <Entry.Behaviors>
 
                                         </Entry.Behaviors>
@@ -104,16 +130,16 @@
                             </Frame>
                         </StackLayout>
                         <!--Contenedor de Terminos y Condiciones-->
+                        <Image Source="https://i.postimg.cc/9MrkrgWF/1651183203448.png"   HeightRequest="26" Margin="0,7,0,0"></Image>
 
-                        <StackLayout Margin="0,55,0,0" Padding="0" BackgroundColor="#f5f8ff"
-                                      HeightRequest="120" >
-                            <Grid   Margin="0,40,0,0"  >
-                                <Frame BackgroundColor="#f5f8ff" HeightRequest="20" WidthRequest="10" HasShadow="False"  Margin="0,10,220,10"  Padding="0">
-                                    <Image Source="https://i.postimg.cc/9MrkrgWF/1651183203448.png"  Margin="0"></Image>
+                        <Grid   Margin="0,5,0,0"  >
+                                
+                                <Frame BackgroundColor="#f5f8ff"  HasShadow="False"   Padding="0,0,0,0">
+                                  
                                 </Frame>
-                                <Label Margin="80,0,20,0" Text="Aremos cargo Temporal de 5S/ para verficar su tarjeta." TextDecorations="Underline"  TextColor="DarkCyan" FontSize="Small" HorizontalTextAlignment="left"/>
+                                <Label Text="Cargo temporal S/ 5.00 de verficación" TextDecorations="Underline"  TextColor="DarkCyan" FontSize="Small" HorizontalTextAlignment="Center"/>
                             </Grid>
-                        </StackLayout>
+                      
 
                         <!--Uso de Butoon para enviar -->
                         <StackLayout Margin="20,30,20,0" >

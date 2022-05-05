@@ -25,9 +25,9 @@ namespace TF2FPR
         public App()
         {
             InitializeComponent();
-
+            //NAVEGACION ENTRE PAGINAS
             MainPage = new NavigationPage(new Index());
-            //MainPage =  new Index();
+            
             
         }
 

@@ -30,11 +30,13 @@
                                            CommandParameter="{Binding .}"
                                            x:Name="editP"
                                            Invoked="editP_Invoked"/>
+                                        
                                         <SwipeItem Text="Borrar"
                                            BackgroundColor="#ff3333"
                                            CommandParameter="{Binding .}"
                                            x:Name="deletP"
                                            Invoked="deletP_Invoked"/>
+                                        
                                     </SwipeItems>
                                 </SwipeView.RightItems>
                                 <Grid RowSpacing="0">
@@ -81,8 +83,10 @@
                                        Grid.Row="0" Grid.Column="1"
                                        VerticalOptions="CenterAndExpand"
                                        FontSize="20"
-                                       FontAttributes="Bold"/>
-                                    <Label Text="{Binding PrecioP}"
+                                       FontAttributes="Bold"
+                                       
+                                           />
+                                    <!--<Label Text="{Binding PrecioP}"
                                        Grid.Row="0" Grid.Column="2"
                                        VerticalOptions="CenterAndExpand"
                                        FontSize="20"
@@ -91,7 +95,7 @@
                                        Grid.Row="0" Grid.Column="3"
                                        VerticalOptions="CenterAndExpand"
                                        FontSize="20"
-                                       FontAttributes="Bold"/>
+                                       FontAttributes="Bold"/>-->
 
                                 </Grid>
                             </SwipeView>

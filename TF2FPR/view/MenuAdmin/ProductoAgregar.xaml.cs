@@ -19,6 +19,7 @@ namespace TF2FPR.view.MenuAdmin
         model.ShopModel _shopModel;
         public ProductoAgregar(model.ShopModel shopModel)
         {
+            //INICIALIZACION Y ENVIO DE DATOS DE CADA ENTRY HACIA LAS VARIABLES DE LA TABLA PRODUCTO
             InitializeComponent();
             Title = "Productos";
             _shopModel = shopModel;

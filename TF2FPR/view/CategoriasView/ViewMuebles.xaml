@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TF2FPR.view.CategoriasView.ViewMuebles">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+            <SearchBar></SearchBar>
+
+            <StackLayout  Margin="15,20,15,15">
+
+
+                <Frame
+                Margin="0,0,0,1"  
+                BorderColor="DarkGray" CornerRadius="5" Padding="8">
+                    <StackLayout>
+                            <Image Source="https://http2.mlstatic.com/D_NQ_NP_2X_976672-MPE47849084246_102021-F.webp" Margin="0,15,0,0"
+                                   WidthRequest="120">
+                        </Image>
+                            <Label Text="Item: Silla Giratoria Ergonómica Para Oficina" FontSize="Medium" TextColor="Black"  FontAttributes="Bold" />
+                        <Label Text="S/ 929.00" FontSize="Small"  TextColor="Black"  FontAttributes="Bold"/>
+                        <BoxView Color="black" HeightRequest="2" HorizontalOptions="Fill" 
+                             Margin="0,10,0,10"/>
+                        <Label
+                         TextColor="Black" Text="Detalles"/>
+                        <ImageButton Source="https://i.postimg.cc/Qxnhm2Jc/545680.png"  
+                                 BackgroundColor="White" HeightRequest="30" Margin="90,-30,0,0" x:Name="btnDetalleItem1"
+                                 Clicked="btnDetalleItem1_Clicked"></ImageButton>
+                    </StackLayout>
+                </Frame>
+
+
+
+                <Frame
+                Margin="0,0,0,1"  
+                BorderColor="DarkGray" CornerRadius="5" Padding="8">
+                    <StackLayout>
+                        <Image Source="mueble2.png" WidthRequest="150">
+                        </Image>
+                        <Label Text="Item: Porta libros de Roble" FontSize="Medium" TextColor="Black"  FontAttributes="Bold" />
+                        <Label Text="S/ 150.00" FontSize="Small"  TextColor="Black"  FontAttributes="Bold"/>
+                        <BoxView Color="black" HeightRequest="2" HorizontalOptions="Fill" 
+                             Margin="0,10,0,10"/>
+                        <Label
+                         TextColor="Black" Text="Detalles"/>
+                        <ImageButton Source="https://i.postimg.cc/Qxnhm2Jc/545680.png"  
+                                 BackgroundColor="White" HeightRequest="30" Margin="90,-30,0,0"></ImageButton>
+                    </StackLayout>
+                </Frame>
+
+
+
+                <Frame
+                Margin="0,0,0,1"  
+                BorderColor="DarkGray" CornerRadius="5" Padding="8">
+                    <StackLayout>
+                            <Image Source="mueble3.png"  WidthRequest="180">
+                        </Image>
+                        <Label Text="Item: Cajonera" FontSize="Medium" TextColor="Black"  FontAttributes="Bold" />
+                        <Label Text="S/ 333.00" FontSize="Small"  TextColor="Black"  FontAttributes="Bold" />
+                        <BoxView Color="black" HeightRequest="2" HorizontalOptions="Fill" 
+                             Margin="0,10,0,10"/>
+                        <Label
+                         TextColor="Black" Text="Detalles"/>
+                        <ImageButton Source="https://i.postimg.cc/Qxnhm2Jc/545680.png"  
+                                 BackgroundColor="White" HeightRequest="30" Margin="90,-30,0,0"></ImageButton>
+                    </StackLayout>
+                </Frame>
+
+
+
+                <!--<Frame
+                Margin="0,0,0,1"  
+                BorderColor="DarkGray" CornerRadius="5" Padding="8">
+                    <StackLayout>
+                        <Image Source="https://i.pinimg.com/originals/57/3c/e4/573ce42590daa9595a35aacc5bea791f.png">
+                        </Image>
+                        <Label Text="Item" FontSize="Medium" TextColor="Black"  FontAttributes="Bold" />
+                        <Label Text="50s/" FontSize="Small"  TextColor="Black"  FontAttributes="Bold" Margin="80,-25,0,0"/>
+                        <BoxView Color="black" HeightRequest="2" HorizontalOptions="Fill" 
+                             Margin="0,10,0,10"/>
+                        <Label
+                         TextColor="Black" Text="Detalles"/>
+                        <ImageButton Source="https://i.postimg.cc/Qxnhm2Jc/545680.png"  
+                                 BackgroundColor="White" HeightRequest="30" Margin="90,-30,0,0"></ImageButton>
+                    </StackLayout>
+                </Frame>-->
+
+
+            </StackLayout>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

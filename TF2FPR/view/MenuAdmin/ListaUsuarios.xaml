@@ -3,6 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TF2FPR.view.MenuAdmin.ListaUsuarios"
              Title="Lista Usuarios">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add" x:Name="AddUser"
+                     Clicked="AddUser_Clicked"/>
+    </ContentPage.ToolbarItems>
+
+
     <ContentPage.Content>
             <StackLayout>
 

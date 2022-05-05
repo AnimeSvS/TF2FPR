@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TF2FPR.view.InicioT1">
+    <ContentPage.Content>
+
+        <ScrollView>
+
+            <StackLayout>
+         
+            <SearchBar> </SearchBar>
+            <StackLayout  Margin="15,10,15,15">
+            
+                    <Frame
+                Margin="0"  
+                BorderColor="DarkGray" CornerRadius="5" Padding="8">
+        
+            <StackLayout>
+                            <ImageButton Source="tv.png" BackgroundColor="White" WidthRequest="180">
+                            </ImageButton>
+                
+                        <Label Text="TECNOLOGIA" FontSize="Medium" TextColor="Black"  FontAttributes="Bold" HorizontalOptions="CenterAndExpand" />
+                            <BoxView Color="black" HeightRequest="2" HorizontalOptions="Fill" 
+                             Margin="0,10,0,10"/>
+
+                        </StackLayout>
+                </Frame>
+
+
+
+                <Frame
+                Margin="0"  
+                BorderColor="DarkGray" CornerRadius="5" Padding="8">
+                    <StackLayout>
+                            <ImageButton Source="e.png" WidthRequest="120"   BackgroundColor="White">
+                              
+                        </ImageButton>
+                        <Label Text="ELECTRODOMESTICOS" FontSize="Medium" TextColor="Black"  FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
+                     
+                        <BoxView Color="black" HeightRequest="2" HorizontalOptions="Fill" 
+                             Margin="0,10,0,10"/>
+                      
+                    </StackLayout>
+                </Frame>
+
+
+
+                <Frame
+                Margin="0"  
+                BorderColor="DarkGray" CornerRadius="5" Padding="8">
+                    <StackLayout>
+                        <ImageButton Source="moda.png" BackgroundColor="White" WidthRequest="190">
+                        </ImageButton>
+                        <Label Text="MODA" FontSize="Medium" TextColor="Black"  FontAttributes="Bold" HorizontalOptions="CenterAndExpand" />
+                      
+                        <BoxView Color="black" HeightRequest="2" HorizontalOptions="Fill" 
+                             Margin="0,10,0,10"/>
+                    
+                     
+                    </StackLayout>
+                </Frame>
+
+
+
+                <Frame
+                Margin="0"  
+                BorderColor="DarkGray" CornerRadius="5" Padding="8">
+                    <StackLayout>
+                        <ImageButton Source="muebles.png" BackgroundColor="White" WidthRequest="200" x:Name="btnMuebles" 
+                                     Clicked="btnMuebles_Clicked">
+                        </ImageButton>
+                        <Label Text="MUEBLES" FontSize="Medium" TextColor="Black"  FontAttributes="Bold" HorizontalOptions="CenterAndExpand" />
+                       
+                        <BoxView Color="black" HeightRequest="2" HorizontalOptions="Fill" 
+                             Margin="0,10,0,10"/>
+                   
+                    </StackLayout>
+                </Frame>
+
+
+            </StackLayout>
+       
+        </StackLayout>
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

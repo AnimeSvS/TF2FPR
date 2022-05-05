@@ -21,31 +21,36 @@ namespace TF2FPR.data
             db.CreateTableAsync<ShopModel>();
         }
 
-        ///USUSARIOS
-        //CREARA O INSERTARA EL OBJETO Y DEVOLVERA UN VALAOR ENTERO DE LAS FILAS AGREGADAS
+        ///CRUD USUARIOS
+        //CREARA O INSERTARA EL OBJETO Y DEVOLVERA UN VALOR ENTERO DE LAS FILAS AGREGADAS
         public Task<int> CreateUsuario(UserModel userModel)
         {
             return db.InsertAsync(userModel);
-            //---------------------------------------------------------------------------------
+
+        
         }
+        //---------------------------------------------------------------------------------
         //LEERA LOS DATOS DE LA TABLA Y LO DEVOLVERA A UNA INTERFAZ DONDE SE PUEDA CONSULTAR
         public Task<List<UserModel>> ReadUsuario()
         {
             return db.Table<UserModel>().ToListAsync();
-            //---------------------------------------------------------------------------------
+           
         }
+        //---------------------------------------------------------------------------------
         //ACTUALIZARA LA BASE DE DATOS EN FUNCION DEL OBJETO QUE SE LE PASO
         public Task<int> UpdateUsuario(UserModel userModel)
         {
             return db.UpdateAsync(userModel);
-            //---------------------------------------------------------------------------------
+           
         }
+        //---------------------------------------------------------------------------------
         //ELIMINA AL OBJETO QUE SE PASO Y RETORNA LAS FILAS ELIMINADAS
-        public Task<int> DeleteAgenda(UserModel userModel)
+        public Task<int> DeleteUsuario(UserModel userModel)
         {
             return db.DeleteAsync(userModel);
-            //---------------------------------------------------------------------------------
+            
         }
+        //---------------------------------------------------------------------------------
         //BUSCA CADA USUARIO POR EL NOMBRE
         public Task<List<UserModel>> Search(string search)
         {
@@ -78,7 +83,7 @@ namespace TF2FPR.data
             return db.DeleteAsync(shopModel);
             //---------------------------------------------------------------------------------
         }
-        //BUSCA CADA USUARIO POR EL NOMBRE
+        //BUSCA CADA PRODUCTO POR EL NOMBRE
         public Task<List<ShopModel>> SearchProducto(string searchP)
         {
             return db.Table<ShopModel>().Where(p => p.NombreP.StartsWith(searchP)).ToListAsync();

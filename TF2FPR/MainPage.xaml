@@ -14,7 +14,7 @@
     <FlyoutPage.Detail>
         <NavigationPage>
             <x:Arguments>
-                <view:Inicio/>
+                <view:InicioT1/>
             </x:Arguments>
         </NavigationPage>
     </FlyoutPage.Detail>

@@ -41,9 +41,9 @@
                             <Image Grid.Column="2" Grid.Row="0" Grid.RowSpan="3" Aspect="AspectFill"
                        Source="https://static.vecteezy.com/system/resources/previews/004/458/418/large_2x/shopping-cart-flat-linear-long-shadow-icon-add-to-cart-sign-line-symbol-vector.jpg"/>
                             <Label Grid.Row="1" Grid.Column="0" Text="Total" TextColor="DarkCyan"/>
-                            <Label Grid.Row="1" Grid.Column="1" Text="$/20" FontAttributes="Bold"/>
+                            <Label Grid.Row="1" Grid.Column="1" Text="S/ 929.00" FontAttributes="Bold"/>
                             <Label Grid.Row="2" Grid.Column="0" Text="Ahorrado" TextColor="DarkCyan" FontSize="10"/>
-                            <Label Grid.Row="2" Grid.Column="1" Text="$/5" FontAttributes="Bold" FontSize="10"/>
+                            <Label Grid.Row="2" Grid.Column="1" Text="S/ 5.00" FontAttributes="Bold" FontSize="10"/>
                         </Grid>
                         <!--GRID DE LA PLAYERA NEGRA-->
                         <Grid Grid.Row="2" Margin="5,10,5,0">
@@ -58,22 +58,22 @@
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <Image Grid.Row="0" Grid.RowSpan="4" Grid.Column="0" Aspect="AspectFill" Margin="5"
-                       Source="https://cdn.shopify.com/s/files/1/0553/4315/3318/products/2.1-Tshirt-Black_1800x1800.jpg?v=1630687617"/>
-                            <Label Grid.Row="0" Grid.Column="1" Text="Playera negra" VerticalOptions="EndAndExpand"
+                            <Image Grid.Row="0" Grid.RowSpan="4" Grid.Column="0" Aspect="AspectFill" Margin="20"
+                       Source="https://http2.mlstatic.com/D_NQ_NP_2X_976672-MPE47849084246_102021-F.webp"/>
+                            <Label Grid.Row="0" Grid.Column="1" Text="Silla Ergonómica" VerticalOptions="EndAndExpand"
                            TextColor="Black" FontAttributes="Bold" FontSize="15"/>
                             <Label Grid.Row="1" Grid.Column="1" Text="Perfecta para usted"
                            FontSize="10" TextColor="Black" VerticalOptions="StartAndExpand"/>
                             <Image Grid.Row="2" Grid.Column="1" HorizontalOptions="Start"
                        Source="https://static.vecteezy.com/system/resources/thumbnails/002/399/687/small/five-stars-rating-icon-vector.jpg"/>
-                            <Label Grid.Row="3" Grid.Column="1" Text="$/20" FontSize="15" TextColor="Black" FontAttributes="Bold"/>
+                    <Label Grid.Row="3" Grid.Column="1" Text="S/ 929.00" FontSize="15" TextColor="Black" FontAttributes="Bold"/>
                             <Image Grid.Row="0" Grid.Column="2" Grid.RowSpan="2" HorizontalOptions="Center" VerticalOptions="Center"
                        Source="https://ayudawp.com/wp-content/uploads/2018/04/borrar-plugins-wordpress.png"/>
                         </Grid>
                         <!--La LINEA-->
                         <Label Grid.Row="3" Text="_______________________________________________________"
                        FontAttributes="Bold" TextColor="DarkCyan" HorizontalOptions="Center"/>
-                        <Label Grid.Row="4" Text="          Seguir comprando" 
+                        <Label Grid.Row="4" Text="          Seguir comprando"
                        TextColor="DarkCyan" FontAttributes="Italic" />
                         <!--GRID DE LA PLAYERA ROJA-->
                         <Grid Grid.Row="5" Margin="5,10,5,0">
@@ -96,10 +96,10 @@
                            FontSize="10" TextColor="Black" VerticalOptions="StartAndExpand"/>
                             <Image Grid.Row="2" Grid.Column="1" HorizontalOptions="Start"
                        Source="https://static.vecteezy.com/system/resources/thumbnails/002/399/687/small/five-stars-rating-icon-vector.jpg"/>
-                            <Label Grid.Row="3" Grid.Column="1" Text="$/40" FontSize="15" TextColor="Black" FontAttributes="Bold"/>
-                            <Button Grid.Row="2" Grid.Column="2" Grid.RowSpan="2" HorizontalOptions="Center" VerticalOptions="Center"
-                       Text="Agregar" CornerRadius="15" BackgroundColor="MediumVioletRed" 
-                                    TextColor="White" WidthRequest="120"/>
+                            <Label Grid.Row="3" Grid.Column="1" Text="S/ 40.00" FontSize="15" TextColor="Black" FontAttributes="Bold"/>
+                            <Button Grid.Row="2" Grid.Column="2" Grid.RowSpan="2" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="35"
+                       Text="Agregar" CornerRadius="5" BackgroundColor="MediumVioletRed" 
+                                    TextColor="White" WidthRequest="100" />
                         </Grid>
                         <!--grid de la playera azul-->
                         <Grid Grid.Row="6" Margin="5,10,5,0">
@@ -122,10 +122,10 @@
                            FontSize="10" TextColor="Black" VerticalOptions="StartAndExpand"/>
                             <Image Grid.Row="2" Grid.Column="1" HorizontalOptions="Start"
                        Source="https://static.vecteezy.com/system/resources/thumbnails/002/399/687/small/five-stars-rating-icon-vector.jpg"/>
-                            <Label Grid.Row="3" Grid.Column="1" Text="$/32" FontSize="15" TextColor="Black" FontAttributes="Bold"/>
+                            <Label Grid.Row="3" Grid.Column="1" Text="S/ 32.00" FontSize="15" TextColor="Black" FontAttributes="Bold"/>
                             <Button Grid.Row="2" Grid.Column="2" Grid.RowSpan="2" HorizontalOptions="Center" VerticalOptions="Center"
-                       Text="Agregar" CornerRadius="15" BackgroundColor="MediumVioletRed" 
-                                    TextColor="White" WidthRequest="120"/>
+                       Text="Agregar" CornerRadius="5" BackgroundColor="MediumVioletRed" HeightRequest="35" 
+                                    TextColor="White" WidthRequest="100"/>
                         </Grid>
                     </Grid>
                 </ScrollView>
